@@ -27,4 +27,4 @@ function fly() {
 
 fly();
 
-setInterval(fly, 90000);
+setInterval(fly, 45000);
