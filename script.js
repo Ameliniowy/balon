@@ -9,8 +9,8 @@ function fly() {
     // Wymuszenie odświeżenia animacji
     balloon.offsetHeight;
 
-    // Trzy możliwe pozycje (środek ±5%)
-    const positions = [45, 50, 55];
+    // Trzy możliwe pozycje (środek ±10%)
+    const positions = [40, 50, 60];
     const random = positions[Math.floor(Math.random() * positions.length)];
 
     balloon.style.left = random + "%";
@@ -24,5 +24,5 @@ function fly() {
 // Pierwszy lot
 fly();
 
-// Kolejne loty co 35 sekund
-setInterval(fly, 35000);
+// Kolejne loty co 30 sekund
+setInterval(fly, 30000);
