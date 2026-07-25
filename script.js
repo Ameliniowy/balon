@@ -24,5 +24,5 @@ function fly() {
 // Pierwszy lot
 fly();
 
-// Kolejne loty co 30 sekund
-setInterval(fly, 30000);
+// Kolejne loty co 25 sekund
+setInterval(fly, 25000);
