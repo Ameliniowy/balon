@@ -10,7 +10,15 @@ function fly() {
 
     // szerokość balonuconst balloon = document.getElementById("balloon");
 
-function fly() {
+function fly() {// Trzy możliwe trasy lotu
+const trasy = ["45%", "50%", "55%"];
+
+// Losowanie jednej z trzech tras
+const wybranaTrasa = trasy[Math.floor(Math.random() * trasy.length)];
+
+// Ustawienie pozycji
+balloon.style.left = wybranaTrasa;
+balloon.style.transform = "translateX(-50%)";
 
     balloon.style.transition = "none";
 
