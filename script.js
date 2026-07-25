@@ -8,24 +8,22 @@ function fly() {
 
     balloon.offsetHeight;
 
-    // Trzy możliwe trasy
-    const positions = ["45%", "50%", "55%"];
+    // trzy możliwe trasy
+    const positions = [40, 50, 60];
 
-    // Losowanie jednej z tras
-    const randomPosition =
+    const random =
         positions[Math.floor(Math.random() * positions.length)];
 
-    balloon.style.left = randomPosition;
-    balloon.style.transform = "translateX(-50%)";
+    balloon.style.left = random + "%";
 
-    // Czas lotu
     balloon.style.transition = "bottom 10s linear";
 
     balloon.style.bottom = "110%";
 
 }
 
+// pierwszy lot
 fly();
 
-// Powtarzanie co 35 sekund
-setInterval(fly, 35000);
+// następne loty co 30 sekund
+setInterval(fly, 30000);
