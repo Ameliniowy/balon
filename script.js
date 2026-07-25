@@ -51,8 +51,8 @@ function fly() {
 
 fly();
 
-// Powtarzanie co 45 sekund
-setInterval(fly, 45000);
+// Powtarzanie co 30 sekund
+setInterval(fly, 30000);
 }
 
 fly();
