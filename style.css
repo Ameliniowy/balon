@@ -19,7 +19,9 @@ position:absolute;
 
 bottom:-900px;
 
-left:40%;
+left:50%;
+
+transform:translateX(-50%);
 
 width:220px;
 
